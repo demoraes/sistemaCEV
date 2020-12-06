@@ -10,6 +10,9 @@ const api = axios.create({
   headers: {
     Authorization: `Bearer ${API_KEY}`,
     'Content-Type': 'application/json',
+    Accept: 'application/json',
+    'Access-Control-Allow-Origin': '*',
+    'x-requested-with': 'xmlhttprequest',
   },
 });
 
